@@ -1,8 +1,12 @@
-import string
 def print_rangoli(size):
-    a = string.ascii_lowercase
-    r = []
-    for i in range(size):
-        s = "-".join(a[i:size])
-        r.append((s[::-1]+s[1:]).center(4*size-3, "-"))
-    print('\n'.join(r[:0:-1]+r))
+    a = "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+    spl = a.split(" ")
+    print(spl)
+    for char in a:
+        asa = spl.join("-")
+    print(asa)
+
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
